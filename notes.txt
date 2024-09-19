@@ -1,0 +1,35 @@
+/project-root
+│
+├── /public                         # Frontend (HTML, CSS, JS files)
+│   ├── /css
+│   │   └── style.css               # General stylesheet for the website
+│   ├── /js
+│   │   ├── admin.js                # Admin functionality (login)
+│   │   ├── tutor.js                # Tutor registration & login functionality
+│   │   ├── student.js              # Student login functionality
+│   │   └── dashboard.js            # Handles dashboard for tutors and students
+│   ├── index.html                  # Homepage
+│   ├── tutor-register.html         # Tutor registration page
+│   ├── tutor-login.html            # Tutor login page
+│   ├── student-login.html          # Student login page
+│   └── admin.html                  # Admin login page
+│
+├── /server                         # Backend (Node.js, Express, Mongoose)
+│   ├── /routes                     # All routes
+│   │   ├── tutor.js                # Tutor-related routes
+│   │   ├── student.js              # Student-related routes
+│   │   └── admin.js                # Admin-related routes
+│   ├── /models                     # Mongoose schemas (database models)
+│   │   ├── tutor.js                # Tutor model
+│   │   ├── student.js              # Student model
+│   │   └── admin.js                # Admin model
+│   ├── /middlewares                # Middleware for authentication
+│   │   └── auth.js                 # Auth middleware
+│   ├── server.js                   # Main Express app file
+│   └── config.js                   # Configuration (DB connection, secrets)
+│
+├── /node_modules                   # Installed Node.js packages
+├── .env                            # Environment variables (JWT_SECRET, DB_URI)
+├── package.json                    # NPM package list and scripts
+├── package-lock.json               # Auto-generated for exact versioning
+└── README.md                       # Project documentation
